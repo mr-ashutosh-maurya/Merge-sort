@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void merge(vector<int>&a,vector<int>&b,vector<int>&res){
+void merge(vector<int>&a,vector<int>&b,vector<int>&res){ //merging newly created array
     int i=0;
     int j=0;
     int k=0;
@@ -22,16 +22,18 @@ void mergeSort(vector<int>&v){
     mergeSort(a1);
     mergeSort(a2);
     merge(a1,a2,v);
+    a1.clear();  //removing extra created array to optimize space o(n)
+    a2.clear();
 }
 int main(){
     int arr[]={8,4,12,3,6};
     int n=sizeof(arr)/sizeof(arr[0]);
     vector<int>v(arr,arr+n);
-    for(int i=0;i<v.size();i++){
+    for(int i=0;i<v.size();i++){  //printing before sorting
          cout<<v[i]<<" ";
     }
     cout<<endl;
-    mergeSort(v);
+    mergeSort(v);               //printing after sorting
     for(int i=0;i<v.size();i++){
          cout<<v[i]<<" ";
     }
