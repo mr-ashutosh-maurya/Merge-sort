@@ -24,8 +24,8 @@ Merge Sort is a stable and comparison-based sorting algorithm with a time comple
 ## File Overview
 
 - **`merge_sort.cpp`**: The main file containing the Merge Sort implementation.
-- **`inversion.cpp)`**: This file contain the code of counting no. of inversions.
-- **`decreasing-order-merge-sort.cpp)`**:This program reverse sort the array in reverse order.
+- **`inversion.cpp`**: This file contain the code of counting no. of inversions.
+- **`decreasing-order-merge-sort.cpp`**:This program reverse sort the array in reverse order.
 
 ## How to Run the Program
 
